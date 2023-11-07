@@ -2,11 +2,14 @@ import React from "react"
 import Form from "./Form"
 
 const Table = ({ users, postUser, updateUser, deleteUser }) => {
+	// Função para ativar um bloco de edição na tabela 
+	// È executada após clicar no botão de 'update'
 	const showUpdateUser = id => {
 		const form = document.getElementsByClassName(`show-form-${id}`)
 		form[0].classList.toggle("hide-form")
 	}
 
+	// Componente que recebe o usuário como parametro e retorna uma div com os dados do parametro
 	const Row = ({ user }) => {
 		return (
 			<>
@@ -27,6 +30,7 @@ const Table = ({ users, postUser, updateUser, deleteUser }) => {
 		)
 	}
 
+	// Retorno de uma tabela listando todas os usuários com seus devidos dados
 	return (
 		<div className='table'>
 			<div className='titles'>

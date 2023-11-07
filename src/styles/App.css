@@ -1,9 +1,11 @@
+/* Estilizações globais, de divs e tag html */
+
 :root {
-  --background-body: #E5E5E5;
-  --background-content: #1D1D1D;
+  --background-body: #e5e5e5;
+  --background-content: #1d1d1d;
   --text-color: #292929;
-  --primary-color: #4DFF7C;
-  --second-color: #89DDFF;
+  --primary-color: #4dff7c;
+  --second-color: #89ddff;
 }
 
 body {
@@ -65,11 +67,12 @@ form {
   margin: auto;
 }
 
-input, select {
+input,
+select {
   border: none;
   border-radius: 3px;
   padding: 6px;
-  margin:  0 6px;
+  margin: 0 6px;
 }
 
 h3 {
@@ -106,7 +109,7 @@ button:hover,
 }
 
 .all-users {
-margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .titles,
@@ -115,7 +118,7 @@ margin-top: 3rem;
   display: flex;
   text-align: center;
 }
-.titles{
+.titles {
   font-weight: bold;
   background-color: var(--text-color);
   color: var(--background-body);
@@ -124,7 +127,7 @@ margin-top: 3rem;
 .titles div,
 .row input,
 .row select,
-  .row div{
+.row div {
   width: 20%;
   padding: 0.5rem;
 }
